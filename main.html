@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script rel="functionsheet" src="function.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+    <!--navbar-->
+    <div id="navbar">
+        <div class="container">
+            <nav>
+                <h1 id="logo"><span>Portfolio</span></h1>
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://github.com/Jmyio">Github</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+    <!--header-->
+    <div id="header">
+        <div class="container">
+            <div id="header-text">
+                <h1>Hello! I am <span>Jimmy</span></h1>
+                <h1>From Hong Kong</h1>
+                <p>A College Student of Computer Science</p>
+                <p>A Java Developer, Beginner of Web Developing</p>
+                <a href="cv.png" download>
+                    <button class="btn1">Download My CV</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--about-->
+
+    <div id="about">
+        <div class="container">
+            <div id="about-col1">
+                <h1 class="sub-title">About Me</h1>
+                <div id="about-col1-content">
+                    <div class="gif"></div>
+                    <p>
+                        I am an university student, proactively learned beyond lectures.<br><br>2yrs Java and database design at school, developed JavaFX desktop apps. Self-taught full-stack React projects. Python exploration included data analysis and creative projects with OpenCV and PyAutoGUI.<br><br>I'm looking forward to contribute to meaningful projects and advance in software development.
+                    </p>
+                </div>
+            </div>
+            <div id="about-col2">
+                <div class="tab-title">
+                    <p class="open-tab-link active-l" onclick="opentab('skills', event)">Skills</p>
+                    <p class="open-tab-link active-l" onclick="opentab('education', event)">Education</p>
+                    <p class="open-tab-link active-l" onclick="opentab('experience', event)">Courses</p>
+                    <p class="open-tab-link active-l" onclick="opentab('languages', event)">Languages</p>
+                </div>
+
+                <div class="tab-content active-c" id="skills">
+                    <ul class="skills-list">
+                        <li><span>Java</span><br>Experienced</li>
+                        <li><span>JavaFX</span><br>Experienced</li>
+                        <li><span>Spring Boot</span><br>Beginner</li>
+                        <li><span>MySQL</span><br>Experienced</li>
+                        <li><span>HTML/CSS</span><br>Experienced</li>
+                        <li><span>JavaScript</span><br>Intermediate</li>
+                        <li><span>React</span><br>Intermediate</li>
+                        <li><span>Python</span><br>Beginner</li>
+                        <li><span>Figma</span><br>Beginner</li>
+                    </ul>
+                </div>
+
+                <div class="tab-content" id="education">
+                    <ul>
+                        <li>BSc (Hons) in Applied Computing<br>The Hang Seng University of Hong Kong<br><span>Aug 2021 - Present</span></li>
+                    </ul>
+                </div>
+
+                <div class="tab-content" id="experience">
+                    <ul>
+                        <li><span>Recruitment Management System</span><br>JavaFX/SQL</li>
+                        <li><span>Airline Booking System</span><br>JavaFX/SQL</li>
+                        <li><span>Personal Portfolio</span><br>HTML/CSS/JS</li>
+                        <li><span>Responsive Web Design,<br>freeCodeCamp.org</span><br>Aug 2021</li>
+                        <li><span>JavaScript Algorithms and Data Structures,<br>freeCodeCamp.org</span><br>Jun 2021</li>
+                    </ul>
+                </div>
+
+                <div class="tab-content" id="languages">
+                    <ul>
+                        <li><span>Cantonese</span><br>Native</li>
+                        <li><span>English</span><br>Intermediate</li>
+                        <li><span>Putonghua</span><br>Intermediate</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--portfolio-->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Personal Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <div class="project-img1 project-img"></div>
+                    <div class="layer">
+                        <p>Recruitment Management System</p>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <div class="project-img2 project-img"></div>
+                    <div class="layer">
+                        <p>Airline Management System</p>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <div class="project-img3 project-img"></div>
+                    <div class="layer">
+                        <p>Tic-Tac-Toe-AI</p>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <div class="project-img4 project-img"></div>
+                    <div class="layer">
+                        <p>E-commerce Bike Store</p>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <div class="project-img5 project-img"></div>
+                    <div class="layer">
+                        <p>E-commerce Nutrition Store</p>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <div class="project-img6 project-img"></div>
+                    <div class="layer">
+                        <p>To-Do-List Application</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--contact-->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact</h1>
+                    <p><i class="fas fa-paper-plane"></i> s216755@hsu.edu.hk</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +852 52668385</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- return button -->
+    <div id="return">
+        <a href="#header"><i class="fa fa-arrow-up"></i></a>
+    </div>
+
+</body>
+</html>
